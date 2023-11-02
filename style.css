@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg: #090B1A;
+    --card-bg: #1B1938;
+    --accent-color: #AA5CDB;
+    --heading-color: #FFFFFF;
+    --p-color: #a3a1b6;
+
+}
+
+main,
+body {
+    background-color: var(--main-bg);
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__box1 {
+    width: 40vw;
+    height: 70vh;
+    background-color: var(--card-bg);
+    border-radius: 6px 0px 0px 6px;
+}
+
+.header__box2 {
+    width: 38vw;
+    height: 70vh;
+    border-radius: 0px 6px 6px 0px;
+    background-color: var(--accent-color);
+}
+
+.header__box2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 0px 6px 6px 0px;
+    opacity: .5;
+}
+
+.header__box1--quote {
+
+    width: 34vw;
+    height: 56vh;
+    margin-left: 3.5rem;
+    margin-top: 4.5rem;
+}
+
+.header__box1 h1 {
+    margin-top: -14px;
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 2.7vw;
+}
+
+.header__box1 #Important {
+    color: var(--accent-color);
+    font-size: 2.7vw;
+    font-family: 'Inter';
+}
+
+.header__box1 p {
+    width: 26vw;
+    margin-top: 1.5rem;
+    color: var(--p-color);
+    font-family: 'Lexend Deca';
+    font-size: 1vw;
+    line-height: 1.5em;
+}
+
+.header__box1--ratings {
+    display: flex;
+    gap: 5.5vw;
+    padding-top: 11vh;
+}
+
+.header__box1--ratings h2 {
+    font-family: 'Inter';
+    color: var(--heading-color);
+    font-size: 1.5vw;
+}
+
+.header__box1--ratings span {
+    font-size: .8vw;
+    margin-top: .5vw;
+    color: var(--p-color);
+    font-family: 'INTER';
+    margin-bottom: 1rem;
+}
+
+
+
+/* BREAK-POINTS */
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-rows: auto
+    }
+
+    .header__box1 {
+        width: 90vw;
+        height: 90vh;
+        border-radius: 6px 6px 6px 6px;
+
+    }
+
+    .header__box2 {
+        width: 90vw;
+        height: 39vh;
+        margin-top: 2rem;
+        border-radius: 8px 8px 0px 0px;
+        order: -1;
+    }
+
+    .header__box1--ratings {
+        display: block;
+        margin-left: 7rem;
+    }
+
+    .header__box1--info {
+        display: block;
+    }
+
+    .header__box1 #mobile-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .header__box1 h1 {
+        font-size: 7.7vw;
+        width: 70vw;
+        text-align: center;
+        margin-left: -1rem;
+        margin-top: 0px;
+    }
+
+    .header__box1 #Important {
+        font-size: 7.7vw;
+
+    }
+
+    .header__box1 p {
+        font-size: 5vw;
+        text-align: center;
+        width: 70vw;
+        margin-left: -0.5rem;
+        margin-top: 1rem;
+    }
+
+    .header__box1--ratings h2 {
+        font-size: 2.5rem;
+        margin-left: -1rem;
+        padding-top: -10rem;
+
+    }
+
+    .header__box1--ratings span {
+        font-size: 1rem;
+       
+    }
